@@ -1,0 +1,44 @@
+.menu {
+  height: 100dvh;
+  background-color: #161818;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+
+  .body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 8rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 80px;
+      height: 100%;
+
+      .header {
+        color: #ccd0d1;
+        border-bottom: 1px solid #ccd0d1;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+$breakpoint-small: 408px;
+@media (max-width: $breakpoint-small) {
+  .menu {
+    .body {
+      .nav {
+        font-size: 44px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 0.1rem;
+
+  .indicator {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: #ccd0d1;
+  }
+}
